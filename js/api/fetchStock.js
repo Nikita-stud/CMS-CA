@@ -3,6 +3,10 @@ export function fetchStock(items){
 
   items.forEach(function(item){
 
-    container.innerHTML += `<div><h3>${product.name}</h3></div>`;
+    container.innerHTML += `<a href="details.html?id=${#####.id}">
+                               <div>
+                                 <h3>${product.name}</h3>
+                               </div>
+                            </a>`;
   })
 }
