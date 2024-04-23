@@ -1,0 +1,1 @@
+export const url = "http://flower-power.local/wp-json/wc/store/products"
