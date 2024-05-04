@@ -6,20 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="./js/script.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
 </head>
 <body>
   <header>
-
+      <div>
+        <nav>
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </nav>
+     </div>
+      <div class="search">
+        <input type="search" id="search-input" class="search-input" placeholder="Find item..."/>
+        <button class="search-button">Search</button>
+      </div>
   </header> 
+
   <main>
-    <h1>This is CMS page for REST API</h1>
+    <dir class="h1-main">
+      <h1>Eat healthy, stay healthy!</h1>
+      <p>Taking care of your body is easier when all you buy are healthy options</p>
+    </dir>
+
     <section>
-      <div class="items__container">
+      <div class="categories">
+        <label for="sale">On Sale</label>
+        <input type="radio" id="sale" class="category" name="category" value="20"/>
+        <label for="size">Big Fruits</label>
+        <input type="radio" id="size" class="category" name="category" value="21"/>
+        <label for="exotic">Exotic</label>
+        <input type="radio" id="exotic" class="category" name="category" value="19"/>
+      </div>
+      <div class="per-page">
+        <label for="">Number per page</label>
+        <select class="per-page-selection">
+          <option value="2">Two</option>
+          <option value="4">Four</option>
+          <option value="6">Six</option>
+          <option value="10">All</option>
+        </select>
       </div>
     </section>
 
+    <section class="items__box">
+      <span class="loading-indicator">Loading...</span>
+      <div class="items__container">
+        </div>
+      </div>
+    </section>
   </main> 
+
   <footer>
     
   </footer>
