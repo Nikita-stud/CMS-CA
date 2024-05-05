@@ -1,4 +1,1 @@
-export const url = "http://flower-power.local/wp-json/wc/store/products";
-
-
-// const proxy = "https://cors.noroff.dev/"
+export const url = "https://cors.noroff.dev/https://flower-power.one/cms/wp-json/wc/store/products";
